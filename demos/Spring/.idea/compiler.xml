@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itheima_spring_ioc_anno" />
+        <module name="itheima_spring_tx_anno" />
+        <module name="itheima_spring_test" />
+        <module name="itheima_mybatis_config" />
+        <module name="itheima_spring_tx" />
+        <module name="itheima_ssm" />
+        <module name="itheima_mybatis_mapper" />
+        <module name="itheima_mybatis_multi" />
+        <module name="itheima_mybatis_anno" />
+        <module name="itheima_mybatis_quick" />
+        <module name="itheima_spring_interceptor" />
+        <module name="itheima_spring_exception" />
+        <module name="itheima_spring_mvc" />
+        <module name="itheima_spring_ioc" />
+        <module name="itheima_spring_jdbc" />
+        <module name="itheima_spring_aop" />
+        <module name="itheima_mybatis_dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itheima_mybatis_anno" target="1.5" />
+      <module name="itheima_mybatis_config" target="1.5" />
+      <module name="itheima_mybatis_dao" target="1.5" />
+      <module name="itheima_mybatis_mapper" target="1.5" />
+      <module name="itheima_mybatis_multi" target="1.5" />
+      <module name="itheima_mybatis_quick" target="1.5" />
+      <module name="itheima_spring_aop" target="1.5" />
+      <module name="itheima_spring_exception" target="1.5" />
+      <module name="itheima_spring_interceptor" target="1.5" />
+      <module name="itheima_spring_ioc" target="1.5" />
+      <module name="itheima_spring_ioc_anno" target="1.5" />
+      <module name="itheima_spring_jdbc" target="1.5" />
+      <module name="itheima_spring_mvc" target="1.5" />
+      <module name="itheima_spring_test" target="1.5" />
+      <module name="itheima_spring_tx" target="1.5" />
+      <module name="itheima_spring_tx_anno" target="1.5" />
+      <module name="itheima_ssm" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_anno/itheima_mybatis_anno.iml" filepath="$PROJECT_DIR$/itheima_mybatis_anno/itheima_mybatis_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_config/itheima_mybatis_config.iml" filepath="$PROJECT_DIR$/itheima_mybatis_config/itheima_mybatis_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_dao/itheima_mybatis_dao.iml" filepath="$PROJECT_DIR$/itheima_mybatis_dao/itheima_mybatis_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_mapper/itheima_mybatis_mapper.iml" filepath="$PROJECT_DIR$/itheima_mybatis_mapper/itheima_mybatis_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_multi/itheima_mybatis_multi.iml" filepath="$PROJECT_DIR$/itheima_mybatis_multi/itheima_mybatis_multi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_mybatis_quick/itheima_mybatis_quick.iml" filepath="$PROJECT_DIR$/itheima_mybatis_quick/itheima_mybatis_quick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_aop/itheima_spring_aop.iml" filepath="$PROJECT_DIR$/itheima_spring_aop/itheima_spring_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_exception/itheima_spring_exception.iml" filepath="$PROJECT_DIR$/itheima_spring_exception/itheima_spring_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_interceptor/itheima_spring_interceptor.iml" filepath="$PROJECT_DIR$/itheima_spring_interceptor/itheima_spring_interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_ioc/itheima_spring_ioc.iml" filepath="$PROJECT_DIR$/itheima_spring_ioc/itheima_spring_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" filepath="$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_jdbc/itheima_spring_jdbc.iml" filepath="$PROJECT_DIR$/itheima_spring_jdbc/itheima_spring_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_mvc/itheima_spring_mvc.iml" filepath="$PROJECT_DIR$/itheima_spring_mvc/itheima_spring_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_test/itheima_spring_test.iml" filepath="$PROJECT_DIR$/itheima_spring_test/itheima_spring_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_tx/itheima_spring_tx.iml" filepath="$PROJECT_DIR$/itheima_spring_tx/itheima_spring_tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_spring_tx_anno/itheima_spring_tx_anno.iml" filepath="$PROJECT_DIR$/itheima_spring_tx_anno/itheima_spring_tx_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itheima_ssm/itheima_ssm.iml" filepath="$PROJECT_DIR$/itheima_ssm/itheima_ssm.iml" />
+    </modules>
+  </component>
+</project>

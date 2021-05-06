@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                            http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 每个dubbo应用（服务提供方和服务消费方）都必须指定一个唯一的名称 -->
+    <dubbo:application name="dubbo_consumer"/>
+    <!-- 指定服务的注册中心 -->
+    <dubbo:registry address="zookeeper://192.168.3.26:2181"/>
+    <!-- 指定包扫描，用于发布dubbo服务 -->
+    <dubbo:annotation package="com.itheima.controller"/>
+    <!--
+        生成远程服务代理
+        check="false" 启动时不检查
+        mock="return null" 当provider出现非业务异常（超时、网络异常等）时，对service中的所有方法做统一处理，都返回null
+        mock="true" 同时实现mock接口，类名要注意命名规范：接口名 + Mock，此时如果调用失败会调用mock实现，mock实现需要保证有无参的构造方法
+    -->
+    <dubbo:consumer check="false" mock="true"/>
+
+</beans>
