@@ -4,7 +4,7 @@
 
 推荐使用IDEA编辑器
 
-推荐使用Typora查看MarkDown文档，下载地址：https://typora.io/
+推荐使用Typora查看Markdown文档，下载地址：https://typora.io/
 
 推荐使用VMware虚拟机软件
 
