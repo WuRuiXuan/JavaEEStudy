@@ -6,7 +6,7 @@
 
 持久层：JDBCTemplate
 
-##### Spring IOC
+##### IOC
 
 加载配置文件，解析成 BeanDefinition 放在 Map 里，调用 getBean 的时候，从 BeanDefinition 所属的 Map 里，取出 Class 对象通过反射进行实例化，同时，如果有依赖关系，将递归调用 getBean 方法完成依赖注入
 
