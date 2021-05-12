@@ -5,6 +5,9 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 简单模式：一个消费端消费一个队列
+ */
 public class Consumer_HelloWorld {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1. 创建连接工厂

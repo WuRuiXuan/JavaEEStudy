@@ -5,6 +5,9 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 路由模式：交换机使用路由分发消息到不同的队列中，每个队列由不同的消费端消费，比订阅模式多了路由
+ */
 public class Consumer_Routing2 {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1. 创建连接工厂

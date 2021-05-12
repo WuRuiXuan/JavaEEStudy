@@ -5,6 +5,9 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 工作队列模式：多个消费端消费一个队列，比简单模式多了消费端
+ */
 public class Consumer_WorkQueues2 {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1. 创建连接工厂

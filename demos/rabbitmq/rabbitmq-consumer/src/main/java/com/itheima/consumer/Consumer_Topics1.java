@@ -5,6 +5,9 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 通配符模式：交换机使用通配符分发消息到不同的队列中，每个队列由不同的消费端消费，与路由模式相比，使用通配符分发而不是路由
+ */
 public class Consumer_Topics1 {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1. 创建连接工厂

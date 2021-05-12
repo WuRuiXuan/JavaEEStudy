@@ -5,6 +5,9 @@ import com.rabbitmq.client.*;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 订阅模式：一条消息通过交换机分发到不同队列中，每个队列由不同的消费端消费，比工作队列模式多了交换机
+ */
 public class Consumer_PubSub1 {
     public static void main(String[] args) throws IOException, TimeoutException {
         // 1. 创建连接工厂
