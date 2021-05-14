@@ -240,3 +240,26 @@ redis-cli -c
 cluster nodes
 ```
 
+使用java代码连接集群
+
+```java
+JedisPoolConfig config = new JedisPoolConfig();
+config.setMaxTotal(10);
+config.setMaxIdle(2);
+ 
+// 添加集群节点ip和port
+HostAndPort node0 = new HostAndPort("192.168.61.140", 6379);
+HostAndPort node1 = new HostAndPort("192.168.61.145", 6379);
+Set<HostAndPort> nodes = new HashSet<HostAndPort>();
+nodes.add(node0);
+nodes.add(node1);
+ 
+// 创建集群连接
+JedisCluster jedisCluster = new JedisCluster(nodes, 5000, 10, config);  
+ 
+// 操作reids
+
+// 关闭连接
+jedisCluster.close();
+```
+
