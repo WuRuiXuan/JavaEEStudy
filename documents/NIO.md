@@ -16,6 +16,7 @@
 
 - 通道（Channel）：负责传输
 - 缓冲区（Buffer）：负责存储
+- 选择器（Selector）：选择器
 
 ##### 缓冲区Buffer
 
@@ -148,4 +149,16 @@ outChannel.transferFrom(inChannel, 0, inChannel.size());
 编码：字符串 -> 字节数组
 
 解码：字节数组 -> 字符串
+
+##### 选择器Selector
+
+![NIO的非阻塞模式](https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO的非阻塞模式.png)
+
+在客户端和服务端之间的一层，客户端发起数据读写请求时，会先将通道注册到选择器，选择器会阻塞所有的通道并实时监控通道的状态是否处于可读、可写，只有当通道完全准备就绪后，选择器才会将这个读写任务分配到服务端的一个或多个线程上，再去运行
+
+##### 管道Pipe
+
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO管道.png" alt="NIO管道" style="zoom:50%;" />
+
+两个线程之间单向的数据连接，由一个 Sink 通道（数据写入）和一个 Source 通道（数据读取）组成
 
