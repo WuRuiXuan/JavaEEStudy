@@ -54,7 +54,7 @@ buf.capacity();
 
 ##### 缓冲区读写数据
 
-![缓冲区读写](https://gitee.com/wuruixuan/markdown-images/raw/master/images/缓冲区读写.png)
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/缓冲区读写.png" alt="缓冲区读写" style="zoom:50%;" />
 
 ```java
 // 写数据
@@ -73,11 +73,11 @@ buf.clear();
 
 非直接缓冲区：通过 allocate() 方法分配缓冲区，将缓冲区建立在 JVM 的内存中
 
-![](https://gitee.com/wuruixuan/markdown-images/raw/master/images/非直接缓冲区.png)
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/非直接缓冲区.png" style="zoom: 50%;" />
 
 直接缓冲区：通过 allocateDirect() 方法分配缓冲区，将缓冲区建立在操作系统的物理内存中
 
-![](https://gitee.com/wuruixuan/markdown-images/raw/master/images/直接缓冲区.png)
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/直接缓冲区.png" style="zoom:50%;" />
 
 直接缓冲区的优缺点：
 
@@ -95,7 +95,7 @@ buf.isDirect();
 
 一个完全独立的处理器，附属于 CPU，专门用于 IO 操作，对于大量 IO 操作而言，通道效率更高
 
-![](https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO通道.png)
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO通道.png" style="zoom:50%;" />
 
 通道用于源节点与目标节点的连接，负责缓冲区中数据的传输，本身不存储数据，因此需要配合缓冲区进行传输
 
@@ -152,7 +152,7 @@ outChannel.transferFrom(inChannel, 0, inChannel.size());
 
 ##### 选择器Selector
 
-![NIO的非阻塞模式](https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO的非阻塞模式.png)
+<img src="https://gitee.com/wuruixuan/markdown-images/raw/master/images/NIO的非阻塞模式.png" alt="NIO的非阻塞模式" style="zoom:50%;" />
 
 在客户端和服务端之间的一层，客户端发起数据读写请求时，会先将通道注册到选择器，选择器会阻塞所有的通道并实时监控通道的状态是否处于可读、可写，只有当通道完全准备就绪后，选择器才会将这个读写任务分配到服务端的一个或多个线程上，再去运行
 
